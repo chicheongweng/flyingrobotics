@@ -15,16 +15,20 @@ R = np.matrix([[0.2919, 0.643, -0.7081],[-0.643, -0.4161, -0.643],[-0.7081, 0.64
 u = [1/sqrt(2), -1/sqrt(2), 0]
 phi = 0.8
 print sm(u) - (R - R.transpose())/2/math.sin(phi)
+print math.cos(phi), (R.trace()-1)/2.0
 
 u = [-1/sqrt(2), 0, 1/sqrt(2)]
 phi = 2
 print sm(u) - (R - R.transpose())/2/math.sin(phi)
+print math.cos(phi), (R.trace()-1)/2.0
 
 u = [-1/sqrt(2), 0, 1/sqrt(2)]
 phi = 0.8
 print sm(u) - (R - R.transpose())/2/math.sin(phi)
+print math.cos(phi), (R.trace()-1)/2.0
 
 u = [1/sqrt(2), 0, -1/sqrt(2)]
 phi = 2
 print sm(u) - (R - R.transpose())/2/math.sin(phi)
+print math.cos(phi), (R.trace()-1)/2.0
 
